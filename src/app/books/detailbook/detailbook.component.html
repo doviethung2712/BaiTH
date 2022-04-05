@@ -1,0 +1,18 @@
+<form [formGroup]="deletebook">
+    <div class="form-group">
+      <label for="text">Title</label>
+      <input type="text" class="form-control" disabled id="text"  formControlName="title"/>
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" disabled id="author" formControlName="author"/>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea name="" id="" cols="30" rows="5" disabled class="form-control" formControlName="description"></textarea>
+      <!-- <input type="text" class="form-control" disabled id="description" />  -->
+    </div>
+  
+    <a routerLink="/book/list" routerLinkActive="router-link-active"  class="btn btn-primary">Back</a>
+  </form>
+  

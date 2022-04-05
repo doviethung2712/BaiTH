@@ -1,0 +1,19 @@
+<form [formGroup]="createbookForm" (submit)="create()">
+  <div class="form-group">
+    <label for="text">Title</label>
+    <input type="text" class="form-control" id="text"  formControlName="title"/>
+  </div>
+  <div class="form-group">
+    <label for="author">Author</label>
+    <input type="text" class="form-control" id="author" formControlName="author"/>
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea name="" id="" class="form-control" cols="100" rows="5" formControlName="description"></textarea>
+    <!-- <input type="text" class="form-control" id="description" formControlName="description"/>  -->
+  </div>
+
+  <button type="submit" class="btn btn-primary mr-4">Submit</button>
+  <a routerLink="/book/list" routerLinkActive="router-link-active"  class="btn btn-primary ml-4 mr-4">Back</a>
+
+</form>
